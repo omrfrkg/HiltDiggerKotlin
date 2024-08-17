@@ -1,4 +1,6 @@
 package com.example.hiltkotlin
 
-class Band {
+import javax.inject.Inject
+
+class Band @Inject constructor() {
 }

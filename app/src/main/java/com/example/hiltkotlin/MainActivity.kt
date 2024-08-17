@@ -5,8 +5,17 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+    //Field Injection
+    @Inject
+    lateinit var lars : Musician
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -17,11 +26,19 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        /*
         val band = Band()
         val instrument = Instrument()
         val james = Musician(instrument,band)
         james.sing()
 
+         */
 
+        lars.sing()
+
+    }
+    class FragmentExample() : Fragment(){
+        @Inject
+        lateinit var kirk : Musician
     }
 }
