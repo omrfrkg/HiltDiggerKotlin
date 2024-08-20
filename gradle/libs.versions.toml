@@ -2,6 +2,7 @@
 agp = "8.5.1"
 androidxJunit = "1.1.5"
 espressoCoreVersion = "3.5.1"
+gson = "2.11.0"
 hiltAndroid = "2.52"
 hiltAndroidCompiler = "2.44"
 hiltAndroidCompilerVersion = "2.48"
@@ -20,6 +21,7 @@ retrofit = "(insert latest version"
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-espresso-core-v351 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
 androidx-junit-v115 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroidCompiler" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 hilt-android-compiler-v248 = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompilerVersion" }

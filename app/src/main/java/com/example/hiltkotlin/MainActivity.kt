@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var lars : Musician
 
+    @Inject
+    lateinit var myClass : ClassExample
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -35,6 +38,18 @@ class MainActivity : AppCompatActivity() {
          */
 
         lars.sing()
+
+        println(myClass.myFunction())
+
+        println(myClass.secondFunction())
+
+        /*
+
+                https://developer.android.com/training/dependency-injection/hilt-android?hl=tr
+
+        
+
+         */
 
     }
     class FragmentExample() : Fragment(){
